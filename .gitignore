@@ -1,0 +1,32 @@
+# Node modules
+**/node_modules/
+
+# Next.js build output
+.next/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Turborepo cache
+.turbo/
+
+# .env files (if you're using them for local dev or environment secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# macOS system files
+.DS_Store
+
+# VSCode settings (if using VSCode)
+.vscode/
+
+# IDEs / Editors
+.idea/
+
+# Next.js's static directory (if you're using it for assets that are generated)
+out/

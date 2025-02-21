@@ -1,0 +1,30 @@
+{
+  "name": "TypeFast",
+  "private": true,
+  "scripts": {
+    "build": "cd apps/web/DB_prisma && prisma migrate deploy && prisma generate && cd ../ && next build",
+    "prisma":"cd apps/web/DB_prisma && prisma migrate deploy && prisma generate",
+    "start": "cd apps/web && next start",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "db:setup": "cd packages/db && yarn db:setup",
+    "prisma:generate": "cd packages/db && yarn db:generate",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "^2.3.3",
+    "typescript": "5.5.4"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "yarn@1.22.22",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "typescript-eslint": "^8.22.0"
+  }
+}
