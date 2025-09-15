@@ -1,8 +1,8 @@
 # TypeFast ⚡
 
-A modern, real-time typing speed test application that brings competitive typing to the next level. Built with Next.js and TypeScript, TypeFast offers an immersive multiplayer experience where you can race against friends, climb global leaderboards, and track your typing progress with detailed analytics.
-
 ![TypeFast Preview](preview.png)
+
+A modern, real-time typing speed test application that brings competitive typing to the next level. Built with Next.js and TypeScript, TypeFast offers an immersive multiplayer experience where you can race against friends, climb global leaderboards, and track your typing progress with detailed analytics.
 
 ## ✨ Features
 
