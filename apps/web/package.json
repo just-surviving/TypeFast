@@ -1,6 +1,7 @@
 {
-  "name": "web",
-  "version": "0.0.0",
+  "name": "@typefast/web",
+  "version": "1.0.0",
+  "description": "TypeFast web application - Real-time typing speed test with multiplayer features",
   "type": "module",
   "private": true,
   "scripts": {
@@ -8,7 +9,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint --max-warnings 0",
-    "check-types": "tsc --noEmit"
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "db:generate": "cd DB_prisma && prisma generate",
+    "db:migrate": "cd DB_prisma && prisma migrate deploy",
+    "db:studio": "cd DB_prisma && prisma studio"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

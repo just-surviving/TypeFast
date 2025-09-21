@@ -1,15 +1,37 @@
 {
-  "name": "TypeFast",
+  "name": "typefast",
+  "version": "1.0.0",
+  "description": "A modern, real-time typing speed test application with multiplayer races, leaderboards, and analytics",
   "private": true,
+  "author": "just-surviving",
+  "license": "MIT",
+  "homepage": "https://github.com/just-surviving/TypeFast#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/just-surviving/TypeFast.git"
+  },
+  "keywords": [
+    "typing",
+    "speed-test",
+    "multiplayer",
+    "real-time",
+    "nextjs",
+    "typescript",
+    "websocket"
+  ],
   "scripts": {
     "build": "cd apps/web/DB_prisma && prisma migrate deploy && prisma generate && cd ../ && next build",
     "prisma": "cd apps/web/DB_prisma && prisma migrate deploy && prisma generate",
     "start": "cd apps/web && next start",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "db:setup": "cd packages/db && yarn db:setup",
-    "prisma:generate": "cd packages/db && yarn db:generate",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "lint:fix": "turbo lint --fix",
+    "db:setup": "cd apps/web/DB_prisma && prisma migrate deploy && prisma generate",
+    "db:reset": "cd apps/web/DB_prisma && prisma migrate reset",
+    "db:seed": "cd apps/web/DB_prisma && prisma db seed",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "type-check": "turbo type-check",
+    "clean": "turbo clean"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
